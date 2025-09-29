@@ -25,7 +25,7 @@ export default function EventTimer() {
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date();
-            const difference = eventDate - now;
+            const difference = eventDate.getTime() - now.getTime();
 
             if (difference > 0) {
                 setTimeLeft({

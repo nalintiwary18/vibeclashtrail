@@ -72,7 +72,7 @@ export default function Home() {
                       that Promotes a Collaborative environment for learning and Innovation. Elysian, the annual
                       cultural-tech fest of GGSIPU EDC, celebrates innovation, creativity, and collaboration.
                       From hands-on workshops to cultural showcases, it has something for everyone.
-                      This year's highlight is <span className="text-purple-400 font-bold">VibeClash</span>, a thrilling 24-hour hackathon.
+                      This year&apos;s highlight is <span className="text-purple-400 font-bold">VibeClash</span>, a thrilling 24-hour hackathon.
                   </p>
                   {/* ye thoda maine text highlight type use kiya      ^^^^^      because normal text was looking a bit boring
                                                CAN BE REMOVED IF NOT NEEDED*/}
@@ -153,7 +153,7 @@ export default function Home() {
                           <p className="text-base md:text-lg leading-relaxed">
                               Have Questions or Want to Get Involved?
                               <br />
-                              Reach Out to Us and we'll get Back to You.
+                              Reach Out to Us and we&apos;ll get Back to You.
                           </p>
 
                           <div className="space-y-4 text-sm md:text-base">
