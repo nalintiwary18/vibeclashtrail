@@ -26,7 +26,7 @@ export default function MentorSection() {
     }, [])
 
     return (
-        <section className=" px-4 z-20">
+        <section className="px-4 z-20">
             <div className="max-w-7xl mx-auto">
                 <div
                     className={`text-center mb-20 transition-all duration-800 ease-out ${
@@ -45,7 +45,7 @@ export default function MentorSection() {
                                 }`}
                                 style={{ transitionDelay: `${index * 150}ms` }}
                             >
-                                <Card className="bg-gray-900/50 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-300 ease-out group border border-gray-800/50 shadow-xl rounded-2xl overflow-clip">
+                                <Card className="bg-transparent hover:bg-transparent transition-all duration-300 ease-out group border-0 shadow-none rounded-2xl overflow-clip">
                                     <CardContent className="p-0">
                                         <div className="relative w-full h-72 overflow-hidden">
                                             <Image
@@ -54,7 +54,6 @@ export default function MentorSection() {
                                                 fill
                                                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                                             />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
                                         </div>
 
                                         <div className="p-8 text-center">
