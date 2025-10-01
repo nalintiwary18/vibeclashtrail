@@ -7,6 +7,7 @@ import EventTimer from "@/components/timer";
 import FAQSection from "@/components/FAQ";
 import Link from "next/link";
 import Sponsors from "@/components/sponsors";
+import MentorSection from "@/components/mentors";
 
 const magnetoBold = localFont({
     src: '../public/fonts/MAGNETOB.woff',
@@ -41,7 +42,7 @@ export default function Home() {
                     src="/USAR.png"
                     width={2000}
                     height={500}
-                    className="absolute z-10 pt-28"
+                    className="absolute z-20 pt-28"
                     alt="USAR"
                 />
                 <Link target="_blank" href={"https://www.google.com"} className="absolute z-20 pt-[38rem]">
@@ -103,12 +104,25 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="min-h-screen overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
+            <div className="h-min overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Sponsors</span></h1>
                 <Sponsors/>
             </div>
+            <div className="h-screen bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
+                <ShootingStars className="absolute inset-0" />
+                <StarsBackground className="absolute inset-0" />
+                <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Mentors</span></h1>
+                <MentorSection/>
+            </div>
+            <div className="h-screen bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
+                <ShootingStars className="absolute inset-0" />
+                <StarsBackground className="absolute inset-0" />
+                <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Judges</span></h1>
+                <h1 className="text-gray-200 text-4xl justify-center pt-52 items-center sm:text-5xl md:text-6xl lg:text-7xl">TBA</h1>
+            </div>
+
 
             <div className="min-h-screen overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id={"faq"}>
                 <ShootingStars className="absolute inset-0" />
