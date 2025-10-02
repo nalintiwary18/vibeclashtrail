@@ -22,24 +22,23 @@ export default function SponsorsSection() {
     const infiniteSponsors = [...sponsors, ...sponsors, ...sponsors, ...sponsors]
 
     return (
-        <section className="py-16 px-4 z-20">
+        <section className="py-8 sm:py-12 md:py-16 px-4 z-20">
             <div className="max-w-7xl mx-auto">
-
-                <div className="relative ">
-                    <div className="flex animate-infinite-scroll space-x-6">
+                <div className="relative overflow-hidden">
+                    <div className="flex animate-infinite-scroll space-x-4 sm:space-x-6">
                         {infiniteSponsors.map((sponsor, index) => (
                             <Card
                                 key={`${sponsor.name}-${index}`}
-                                className="flex-shrink-0 w-56 h-52 bg-transparent border-0 transition-all duration-300 group flex items-center justify-center"
+                                className="flex-shrink-0 w-40 h-36 sm:w-48 sm:h-44 md:w-56 md:h-52 bg-transparent border-0 transition-all duration-300 group flex items-center justify-center"
                             >
                                 <CardContent className="p-1 w-full h-full flex items-center justify-center bg-transparent">
-                                    <div className="relative w-full h-full">
+                                    <div className="relative w-full h-full flex items-center justify-center">
                                         <Image
                                             src={sponsor.image || "/placeholder.svg"}
                                             alt={sponsor.name}
                                             width={100}
                                             height={100}
-                                            className="object-contain transition-transform duration-300 group-hover:scale-105"
+                                            className="object-contain transition-transform duration-300 group-hover:scale-105 max-w-full max-h-full"
                                         />
                                     </div>
                                 </CardContent>
