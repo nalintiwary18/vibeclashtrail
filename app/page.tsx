@@ -21,9 +21,9 @@ export default function Home() {
             <ShootingStars className="absolute inset-0" />
             <StarsBackground className="absolute inset-0" />
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-4 sm:pt-6 md:pt-8 lg:pt-10 pb-4 px-0" id={"home"}>
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full md:pt-0 pt-52 md:pb-8  pb-58 sm:pb-12 px-0" id={"home"}>
 
-            <div className="relative z-10 flex flex-col items-center gap-0 sm:gap-4">
+                <div className="relative z-10 flex flex-col items-center gap-0 sm:gap-4">
                     <Image
                         src="/logo.png"
                         alt="logo"
@@ -36,7 +36,7 @@ export default function Home() {
                         alt="heading"
                         width={800}
                         height={800}
-                        className="relative z-20 w-full max-w-[280px] sm:max-w-lg md:max-w-2xl lg:max-w-4xl h-auto"
+                        className="relative z-20 w-full max-w-[280px] sm:max-w-sm md:max-w-2xl lg:max-w-4xl h-auto"
                     />
                 </div>
                 <div className="relative z-20 w-full px-0" style={{marginTop: '-8%', marginBottom: '0.5rem'}}>
@@ -49,21 +49,21 @@ export default function Home() {
                     />
                 </div>
                 <div className="relative z-20 flex flex-col items-center gap-2 sm:gap-2" style={{marginTop: '-8%'}}>
-                    <Link target="_blank" href={"https://www.google.com"}>
+                    <Link target="_blank" href={"https://unstop.com/o/pUMf5JY?lb=fTo57Qnw"}>
                         <Image
                             src="/unstop.png"
                             alt="Register on Unstop"
                             width={130}
                             height={130}
-                            className="w-16 sm:w-20 md:w-32 h-auto hover:scale-110 transition-transform"
+                            className="w-8 sm:w-20 md:w-32 h-auto hover:scale-110 transition-transform"
                         />
                     </Link>
                 </div>
             </div>
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full -mt-20 sm:-mt-28 md:-mt-32 lg:mt-0 pt-12 sm:pt-16 md:pt-20 pb-4 px-4" id="about-us">
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-12 sm:pt-16 md:pt-20 lg:pt-20 pb-8 sm:pb-12 px-4" id="about-us">
 
-            <ShootingStars className="absolute inset-0" />
+                <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <div className="relative z-10 flex flex-col items-center w-full max-w-6xl">
                     <h1 className={magnetoBold.className}><span className="text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">About Us</span></h1>
@@ -88,13 +88,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="event_timer">
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-12 sm:pt-16 md:pt-20 lg:pt-20 pb-8 sm:pb-12 px-4" id="event_timer">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <EventTimer/>
             </div>
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="registration">
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-12 sm:pt-16 md:pt-20 lg:pt-20 pb-1 sm:pb-1 px-4" id="registration">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Prize Pool</span></h1>
@@ -111,19 +111,19 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 sm:pb-12 px-4" id="sponsors">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Sponsors</span></h1>
                 <Sponsors/>
             </div>
-            <div className="min-h-[90vh] bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
+            <div className="bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 sm:pb-12 px-4" id="mentors">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Mentors</span></h1>
                 <MentorSection/>
             </div>
-            <div className="min-h-[90vh] bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id="sponsors">
+            <div className="min-h-[90vh] flex flex-col items-center justify-start relative w-full pt-8 pb-24 sm:pb-12 px-4" id="judges">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Judges</span></h1>
@@ -131,17 +131,17 @@ export default function Home() {
             </div>
 
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-4 px-4" id={"faq"}>
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 sm:pb-12 px-4" id={"faq"}>
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <h1 className={magnetoBold.className}><span className="text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">Frequently Asked Questions</span></h1>
                 <FAQSection/>
             </div>
 
-            <div className="min-h-[90vh] overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 px-4" id={"contact-us"}>
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 px-4" id={"contact-us"}>
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
-                <section className="min-h-[90vh] bg-black py-12 flex flex-col items-center">
+                <section className="bg-black py-12 flex flex-col items-center w-full">
                     <h1 className={magnetoBold.className}><span className="text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Contact Us</span></h1>
 
                     <div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-center justify-center gap-12 pt-8 sm:pt-14">
