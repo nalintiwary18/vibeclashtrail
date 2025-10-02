@@ -21,40 +21,45 @@ export default function Home() {
             <ShootingStars className="absolute inset-0" />
             <StarsBackground className="absolute inset-0" />
 
-            <div className="min-h-screen overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-4 sm:pt-8 pb-4 px-4" id={"home"}>
-                <div className="relative z-10 flex flex-col items-center gap-1 flex-shrink-0">
+            <div className="min-h-screen overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-18 pb-4 px-0" id={"home"}>
+                <div className="relative z-10 flex flex-col items-center gap-0 sm:gap-4">
                     <Image
                         src="/logo.png"
                         alt="logo"
                         width={300}
                         height={300}
-                        className="relative z-20 w-40 sm:w-52 md:w-64 lg:w-72 h-auto py-5 pb-5"
+                        className="relative z-20 w-28 py-5 sm:w-36 md:w-44 lg:w-56 h-auto"
                     />
                     <Image
                         src="/Heading.png"
                         alt="heading"
                         width={800}
                         height={800}
-                        className="relative z-20 w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl h-auto"
+                        className="relative z-20 w-full max-w-[280px] sm:max-w-lg md:max-w-2xl lg:max-w-4xl h-auto"
                     />
                 </div>
-                <Image
-                    src="/USAR.png"
-                    width={2000}
-                    height={500}
-                    className="absolute z-20 pt-28"
-                    alt="USAR"
-                />
-                <Link target="_blank" href={"https://www.google.com"} className="absolute z-20 pt-[38rem]">
+                <div className="relative z-20 w-full px-0" style={{marginTop: '-8%', marginBottom: '0.5rem'}}>
                     <Image
-                        src="/unstop.png"
-                        alt="heading"
-                        width={130}
-                        height={130}
+                        src="/USAR.png"
+                        width={2000}
+                        height={500}
+                        className="w-full h-auto relative z-10"
+                        alt="USAR"
                     />
-                </Link>
+                </div>
+                <div className="relative z-20 flex flex-col items-center gap-2 sm:gap-2" style={{marginTop: '-8%'}}>
+                    <Link target="_blank" href={"https://www.google.com"}>
+                        <Image
+                            src="/unstop.png"
+                            alt="Register on Unstop"
+                            width={130}
+                            height={130}
+                            className="w-16 sm:w-20 md:w-32 h-auto hover:scale-110 transition-transform"
+                        />
+                    </Link>
+                </div>
             </div>
-
+            
             <div className="min-h-screen overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-12 sm:pt-16 md:pt-20 pb-4 px-4" id="about-us">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
