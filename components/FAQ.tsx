@@ -9,7 +9,7 @@ export default function FAQSection() {
     const faqs = [
         {
             question: "What is VibeClash and how is it different from a regular hackathon or ideathon?",
-            answer: "VibeClash is not just about coding or pitching ideas—it’s about solving problems creatively with unexpected twists. Unlike traditional hackathons, surprises like themes, constraints, or judge challenges keep participants on their toes.",
+            answer: "VibeClash is not just about coding or pitching ideas—it's about solving problems creatively with unexpected twists. Unlike traditional hackathons, surprises like themes, constraints, or judge challenges keep participants on their toes.",
         },
         {
             question: "Who can participate?",
@@ -34,18 +34,18 @@ export default function FAQSection() {
     };
 
     return (
-        <div className="h-screen flex items-center justify-center z-20 p-8">
+        <div className="min-h-min flex items-center justify-center z-20 p-4 sm:p-6 md:p-8">
             <div className="w-full max-w-4xl">
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                     {faqs.map((faq, index) => (
-                        <div key={index} className="bg-white/5 rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/10">
+                        <div key={index} className="bg-white/5 rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/10">
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full text-left px-8 py-6 flex items-center justify-between"
+                                className="w-full text-left px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 flex items-center justify-between"
                             >
-                                <h3 className="text-2xl font-semibold text-white pr-4">{faq.question}</h3>
+                                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white pr-3 sm:pr-4">{faq.question}</h3>
                                 <ChevronDown
-                                    className={`w-8 h-8 text-white flex-shrink-0 transition-transform duration-300 ${
+                                    className={`w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white flex-shrink-0 transition-transform duration-300 ${
                                         openIndex === index ? 'rotate-180' : ''
                                     }`}
                                 />
@@ -56,7 +56,7 @@ export default function FAQSection() {
                                     openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                                 }`}
                             >
-                                <div className="px-8 pb-6 text-xl text-white/70 leading-relaxed">
+                                <div className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-5 md:pb-6 text-sm sm:text-base md:text-lg lg:text-xl text-white/70 leading-relaxed">
                                     {faq.answer}
                                 </div>
                             </div>
