@@ -134,7 +134,7 @@ export default function Home() {
             <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 sm:pb-12 px-4" id={"faq"}>
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
-                <h1 className={magnetoBold.className}><span className="text-gray-200 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">Frequently Asked Questions</span></h1>
+                <h1 className={magnetoBold.className}><span className="text-gray-200 justify-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center">Frequently Asked Questions</span></h1>
                 <FAQSection/>
             </div>
 
