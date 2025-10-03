@@ -138,7 +138,7 @@ export default function Home() {
                 <FAQSection/>
             </div>
 
-            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 px-4" id={"contact-us"}>
+            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full pt-8 pb-8 px-4" id="contact-us">
                 <ShootingStars className="absolute inset-0" />
                 <StarsBackground className="absolute inset-0" />
                 <section className="bg-black py-12 flex flex-col items-center w-full">
