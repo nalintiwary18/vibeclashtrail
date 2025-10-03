@@ -29,22 +29,22 @@ export default function Home() {
                         alt="logo"
                         width={300}
                         height={300}
-                        className="relative z-20 w-28 py-5 sm:w-36 md:w-44 lg:w-56 h-auto mt-6 sm:mt-10"
+                        className="relative z-20 w-44 py-5 sm:w-36 md:w-44 lg:w-56 h-auto mt-6 sm:mt-10"
                     />
                     <Image
                         src="/Heading.png"
                         alt="heading"
                         width={800}
                         height={800}
-                        className="relative z-20 w-full max-w-[280px] sm:max-w-sm md:max-w-2xl lg:max-w-4xl h-auto"
+                        className="relative z-20 w-max max-w-[280px] sm:max-w-sm md:max-w-2xl lg:max-w-4xl h-auto"
                     />
                 </div>
-                <div className="relative z-20 w-full px-0" style={{marginTop: '-8%', marginBottom: '0.5rem'}}>
+                <div className="relative z-20 w-126 md:w-full px-0" style={{marginTop: '-8%', marginBottom: '0.5rem'}}>
                     <Image
                         src="/USAR.png"
                         width={2000}
                         height={500}
-                        className="w-full h-auto relative z-10"
+                        className="w-full  h-auto relative z-10"
                         alt="USAR"
                     />
                 </div>
@@ -55,7 +55,7 @@ export default function Home() {
                             alt="Register on Unstop"
                             width={130}
                             height={130}
-                            className="w-8 sm:w-20 md:w-32 h-auto hover:scale-110 transition-transform"
+                            className="w-32 pt-36 md:pt-0 sm:w-20 md:w-32 h-auto hover:scale-110 transition-transform"
                         />
                     </Link>
                 </div>
