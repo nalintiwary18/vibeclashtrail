@@ -21,7 +21,7 @@ export default function Home() {
             <ShootingStars className="absolute inset-0" />
             <StarsBackground className="absolute inset-0" />
 
-            <div className="overflow-clip bg-black flex flex-col items-center justify-start relative w-full md:pt-0 pt-52 md:pb-8  pb-58 sm:pb-12 px-0" id={"home"}>
+            <div className="h-min overflow-clip bg-black flex flex-col items-center justify-start relative w-full md:pt-0 pt-24 md:pb-8  pb-44 sm:pb-12 px-0" id={"home"}>
 
                 <div className="relative z-10 flex flex-col items-center gap-0 sm:gap-4">
                     <Image
